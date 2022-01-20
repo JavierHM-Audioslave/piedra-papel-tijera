@@ -19,13 +19,13 @@ const Score = ({result}) => {
                     <Col xs={12} lg={6}>
                         <div id="score" className="d-flex justify-content-between p-4 border border-2 border-light rounded-3">
                             <div className="d-flex flex-column justify-content-center align-items-center text-light">
-                                <h2>ROCK</h2>
-                                <h2>PAPER</h2>
-                                <h2>SCISSORS</h2>
+                                <h5>ROCK</h5>
+                                <h5>PAPER</h5>
+                                <h5>SCISSORS</h5>
                             </div>
                             <div className="bg-light px-5 py-1 d-flex flex-column justify-content-center align-items-center">
-                                <p>Score</p>
-                                <p className="text-muted mb-0 fw-bold scoreNumber">{scoreSelector}</p>
+                                <h3>Score</h3>
+                                <h5 className="text-muted mb-0 fw-bold scoreNumber">{scoreSelector}</h5>
                             </div>
                         </div>
                     </Col>
