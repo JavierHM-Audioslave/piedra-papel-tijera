@@ -15,7 +15,7 @@ const Score = ({result}) => {
     return (
         <header>
             <Container>
-                <Row className="my-5 justify-content-center">
+                <Row className="mt-2 mb-5 my-sm-5 justify-content-center">
                     <Col xs={12} lg={6}>
                         <div id="score" className="d-flex justify-content-between p-3 border border-2 border-light rounded-3">
                             <div className="d-flex flex-column justify-content-center align-items-center text-light">
