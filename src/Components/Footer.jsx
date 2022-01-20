@@ -16,7 +16,7 @@ const Footer = () => {
 
     return (
 
-        <Container id="footer" style={{ position: "relative", top: topMeasure }}>
+        <Container id="footer" style={{ position: "relative", top: "11em" }}>
             <Row>
                 <Col className="d-flex justify-content-center justify-content-lg-end mb-3">
 
