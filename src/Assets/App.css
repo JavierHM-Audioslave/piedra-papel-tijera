@@ -1,0 +1,220 @@
+@charset "UTF-8";
+body {
+  background-color: #1b1b57;
+}
+
+#score {
+  color: #2626b4;
+}
+
+.scoreNumber {
+  font-size: 4em;
+}
+
+.img-inner-border {
+  border: 2em solid white;
+  border-radius: 7em;
+}
+
+.img-blue-outer-border {
+  border: 1.5em solid blue;
+  border-radius: 7em;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.img-blue-outer-border:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.img-yellow-outer-border {
+  border: 1.5em solid yellow;
+  border-radius: 7em;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.img-yellow-outer-border:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.img-red-outer-border {
+  border: 1.5em solid red;
+  border-radius: 7em;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.img-red-outer-border:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+/* Esta es la clase que, puesta en el svg, setea parte del tamaño de la imàgen svg. La otra parte se la setea con la propiedad "viewBox" de la etiqueta svg. */
+.objects-style {
+  background-color: white;
+  width: 10em;
+  height: 10em;
+}
+
+.paper-position {
+  position: relative;
+  left: 14.5em;
+}
+
+.scissor-position {
+  position: relative;
+  right: 1em;
+}
+
+.triangle-position {
+  position: relative;
+  top: 9em;
+  left: 7em;
+  z-index: -1;
+}
+
+.triangle-style {
+  width: 21em;
+  height: 21em;
+}
+
+.stone-position {
+  position: relative;
+  top: 16em;
+  right: 22.6em;
+}
+
+@media screen and (max-width: 991px) {
+  .img-inner-border {
+    border: 1.5em solid white;
+    border-radius: 15em;
+  }
+  .img-outer-border {
+    border: 1em solid blue;
+    border-radius: 10em;
+  }
+  .objects-style {
+    width: 7em;
+    height: 7em;
+  }
+  .paper-position {
+    left: 10em;
+  }
+  .scissor-position {
+    left: 0em;
+  }
+  .triangle-position {
+    top: 6em;
+    left: 5em;
+  }
+  .triangle-style {
+    width: 14em;
+    height: 14em;
+  }
+  .stone-position {
+    top: 11em;
+    right: 16.8em;
+  }
+}
+
+.img-blue-outer-container-oneOnOne {
+  border: 1.5em solid blue;
+  border-radius: 17em;
+}
+
+.img-yellow-outer-container-oneOnOne {
+  border: 1.5em solid yellow;
+  border-radius: 17em;
+}
+
+.img-red-outer-container-oneOnOne {
+  border: 1.5em solid red;
+  border-radius: 17em;
+}
+
+.img-inner-border-container-oneOnOne {
+  border: 3em solid white;
+  border-radius: 10em;
+}
+
+.objects-style-container {
+  background-color: white;
+  width: 15em;
+  height: 15em;
+}
+
+.empty-dark-circle {
+  background-color: #130447;
+  width: 18em;
+  height: 18em;
+  border-radius: 10em;
+}
+
+/* Animaciòn de la selecciòn de la màquina */
+#machineSelectionContainer {
+  -webkit-animation-name: rotateOverAxisZ;
+          animation-name: rotateOverAxisZ;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@-webkit-keyframes rotateOverAxisZ {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotateOverAxisZ {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+/**********************************************/
+@media screen and (max-width: 991px) {
+  .img-inner-border-container-oneOnOne {
+    border: 2em solid white;
+  }
+  .objects-style-container {
+    width: 8em;
+    height: 8em;
+  }
+  .empty-dark-circle {
+    width: 11em;
+    height: 11em;
+  }
+  #oneOnOneContainer {
+    position: absolute;
+    top: 9em;
+    width: 20em;
+  }
+  .titleContainer {
+    font-size: 1em !important;
+  }
+}
+/*# sourceMappingURL=App.css.map */

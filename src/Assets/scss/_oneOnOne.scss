@@ -1,0 +1,84 @@
+.img-blue-outer-container-oneOnOne {
+    border: 1.5em solid blue;
+    border-radius: 17em;
+}
+
+.img-yellow-outer-container-oneOnOne {
+    border: 1.5em solid yellow;
+    border-radius: 17em;
+}
+
+.img-red-outer-container-oneOnOne {
+    border: 1.5em solid red;
+    border-radius: 17em;
+}
+
+.img-inner-border-container-oneOnOne {  // NOTA: esta es la clase que agranda o achica la imàgen del SVG.
+    border: 3em solid white;
+    border-radius: 10em;
+}
+
+.objects-style-container {
+    background-color: white;
+    width: 15em;
+    height: 15em;
+}
+
+.empty-dark-circle {
+    background-color: rgb(19, 4, 71);
+    width: 18em;
+    height: 18em;
+    border-radius: 10em;
+}
+
+
+
+
+
+/* Animaciòn de la selecciòn de la màquina */
+#machineSelectionContainer {
+    animation-name: rotateOverAxisZ;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+}
+
+@keyframes rotateOverAxisZ {
+    from {
+        transform: rotateY(0deg)
+    }
+
+    to {
+        transform: rotateY(360deg)
+    }
+}
+/**********************************************/
+
+
+@media screen and (max-width: 991px) {
+
+    .img-inner-border-container-oneOnOne {
+        border: 2em solid white;
+    }
+
+    .objects-style-container {
+        width: 8em;
+        height: 8em;
+    }
+
+    .empty-dark-circle {
+        width: 11em;
+        height: 11em;
+    }
+
+    #oneOnOneContainer {
+        position: absolute;
+        top: 9em;
+        width: 20em;
+    }
+
+    .titleContainer {
+        font-size: 1em !important;
+    }
+}
